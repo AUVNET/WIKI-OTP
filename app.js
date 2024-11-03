@@ -57,7 +57,7 @@ app.post('/send-otp', async (req, res) => {
                 <p><em>Note: This is an automated message. Please do not reply directly to this email.</em></p>
             `,
         });        
-
+        console.log('OTP sent successfully');
         res.status(200).json({ message: 'OTP sent successfully' });
     } catch (error) {
         console.error(error);
